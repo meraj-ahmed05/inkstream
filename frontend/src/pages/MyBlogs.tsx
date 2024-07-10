@@ -66,10 +66,10 @@ export const MyBlogs = () => {
                 content={blog.content}
                 publishedDate={blog.issuedOn}
               />
-              <div className="flex flex-row-reverse space-x-8 pt-2">
+              <div className="flex flex-row-reverse space-x-8 pt-2 pr-5">
                 <Link
                   to={`/edit/${blog.id}`}
-                  className="text-blue-500 hover:text-blue-700 mr-4 ml-4"
+                  className="text-blue-500 hover:text-blue-700 mr-4 ml-4 "
                 >
                   <FontAwesomeIcon icon={faEdit} className="mr-2" />
                   Edit

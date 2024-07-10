@@ -43,15 +43,18 @@ export const Appbar = () => {
       >
         Inkstream_
       </Link>
-      <div className="flex items-center relative">
+      <div className="flex items-bottom relative ">
         {location.pathname !== "/publish" && (
           <Link to={`/publish`}>
             <button
               type="button"
-              className="mr-4 text-white bg-green-700 hover:bg-green-800 focus:outline-none font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2"
+              className="grid-cols-2 grid-flow-col-dense mr-4 text-white bg-green-700 hover:bg-green-800 focus:outline-none font-medium rounded-full text-xs sm:text-sm px-4 py-2.5 sm:px-5 sm:py-2.5 text-center me-2 mb-2"
             >
-              <FontAwesomeIcon icon={faPen} className="mr-2" />
-              write...
+              <FontAwesomeIcon
+                icon={faPen}
+                className="mr-2 w-4 h-4 sm:w-4 sm:h-4"
+              />
+              <span className="hidden sm:inline">write...</span>
             </button>
           </Link>
         )}

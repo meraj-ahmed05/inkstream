@@ -13,11 +13,11 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
   });
 
   const [showPassword, setShowPassword] = useState(false);
-  const [isLoading, setIsLoading] = useState(false); // State to track loading state of the button
+  const [isLoading, setIsLoading] = useState(false);
 
   async function sendRequest() {
     try {
-      setIsLoading(true); // Set loading state to true when request starts
+      setIsLoading(true);
 
       const response = await axios.post(
         `${BACKEND_URL}/api/v1/user/${type === "signup" ? "signup" : "signin"}`,
@@ -30,7 +30,7 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
       alert("Incorrect Credentials");
       // alert the user here that the request failed
     } finally {
-      setIsLoading(false); // Reset loading state regardless of success or failure
+      setIsLoading(false);
     }
   }
 
@@ -42,10 +42,8 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
             Welcome to Inkstream_
           </div>
           <div className="px-10">
-            <div className="text-3xl font-extrabold">
-              {type === "signup"
-                ? "Create an account"
-                : "Sign in to your account"}
+            <div className="text-3xl font-extrabold text-center">
+              {type === "signup" ? "Create an account" : "Sign in "}
             </div>
             <div className="text-slate-500">
               {type === "signin"
@@ -98,7 +96,7 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
             <button
               onClick={sendRequest}
               type="button"
-              disabled={isLoading} // Disable the button when loading
+              disabled={isLoading}
               className={`mt-8 w-full text-white bg-gray-800 ${
                 isLoading
                   ? "opacity-50 cursor-not-allowed"
