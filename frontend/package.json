@@ -15,16 +15,9 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@meraj05/input-validation": "^1.0.0",
     "axios": "^1.7.2",
-    "dompurify": "^3.1.6",
-    "draft-js": "^0.11.7",
-    "draft-js-buttons": "^2.0.2",
-    "draft-js-export-html": "^1.4.1",
-    "draft-js-plugins-editor": "^3.0.0",
     "moment-timezone": "^0.5.45",
-    "quill": "^2.0.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-quill": "^2.0.0",
     "react-router-dom": "^6.24.1"
   },
   "devDependencies": {
