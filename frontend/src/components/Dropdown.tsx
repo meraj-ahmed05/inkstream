@@ -7,7 +7,7 @@ const Dropdown = ({ email }: DropdownProps) => {
 
   const handleLogout = () => {
     localStorage.removeItem("token");
-    navigate("/signup");
+    navigate("/signin");
   };
 
   return (
