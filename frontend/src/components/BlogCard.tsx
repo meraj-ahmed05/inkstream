@@ -28,7 +28,7 @@ export const BlogCard = ({
   );
 
   return (
-    <Link to={`/blog/${id}`} className="block w-full max-w-screen-md mx-auto">
+    <Link to={`/blog/${id}`} className="block w-full max-w-screen-md mx-auto ">
       <div className="p-5 border-b border-slate-200 pb-4 cursor-pointer hover:bg-gray-50 transition-colors duration-200 w-80 md:w-full max-w-screen-md mx-auto">
         <div className="flex items-center ">
           <Avatar name={authorName} />

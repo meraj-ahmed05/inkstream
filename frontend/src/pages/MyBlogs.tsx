@@ -53,9 +53,12 @@ export const MyBlogs = () => {
     <div>
       <Appbar />
       <div className="flex justify-center pb-10">
-        <div>
+        <div className="w-full">
           {filteredBlogs.map((blog) => (
-            <div key={blog.id}>
+            <div
+              className=" w-full max-w max-w-screen-md mx-auto"
+              key={blog.id}
+            >
               <BlogCard
                 id={blog.id}
                 authorName={blog.author.name || "Anonymous"}
